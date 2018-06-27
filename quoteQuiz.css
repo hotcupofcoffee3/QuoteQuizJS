@@ -1,0 +1,98 @@
+/* Overall Settings */
+*{margin: 0 auto; text-align: center; font-family: "Palatino"; max-width: 1300px;}
+html{background-color:rgba(58,39,22,0.8);}
+
+/*** Quote Quiz CSS ***/
+
+	.quoteQuiz{width: 100%; position: relative;}
+
+		#choices li,
+		#playAgain{
+			border-radius: 10px;
+			padding: 5%;
+			margin: auto;
+			margin-top: 5%;
+			margin-bottom: 5%;
+			background-color: rgba(25,64,79,1);
+			width: 60%;
+			color: rgba(242,220,162,1);
+			cursor: pointer;
+			list-style: none;
+			font-family: Eurof;
+		}
+		#choices{
+			padding: 5%;
+		}
+		#results{
+			clear: left;
+			padding: 5%;
+			font-size: 20px;
+		}
+		#quoteQuiz{
+			text-align: center;
+		}
+		#quote{
+			margin-top: 0;
+			padding: 5%;
+			height: 15%;
+		}
+		#finalScore{
+			padding: 10% 0;
+		}
+
+	@media screen and (min-width: 400px){
+		#choices{
+			padding: default;
+		}
+		#choices li{
+			padding: 2%;
+			margin: 1%;
+			width: 27%;
+			float: left;
+			font-size: 12px;
+		}
+		#quote{
+			padding: 3% 10%;
+			height: 20%;
+			font-size: 18px;
+		}
+		#results{
+			padding: 2%;
+			font-size: 15px;
+		}
+		#finalScore{
+			padding: 3% 0;
+		}
+	}
+	@media screen and (min-width: 600px){
+		.quoteQuiz{
+			min-height: 100%;
+		}
+		#quote,
+		#results{
+			font-size: 20px;
+		}
+		#quote{
+			padding: 3% 15%;
+			height: 15%;
+		}
+		#choices li{
+			font-size: 18px;
+		}
+		#choices li:hover{
+			background-color: rgba(56,146,182,1);
+		}
+	}
+	@media screen and (min-width: 1000px){
+		#choices li,
+		#quote,
+		#results{
+			font-size: 30px;
+		}
+		#choices li{
+			margin-bottom: 1%;
+		}
+		#quote{
+			padding-bottom: 1.5%;
+		}
+	}
